@@ -12,7 +12,7 @@ from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA, RetrievalQAWithSourcesChain
 from langchain.embeddings.openai import OpenAIEmbeddings
 
-OPENAI_API_KEY = "sk-XXX"
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 @st.cache_data
 def split_file(fpath, chunk_chars=4000, overlap=50):
