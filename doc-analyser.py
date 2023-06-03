@@ -1,7 +1,6 @@
 import os
 import openai
 import streamlit as st
-import pypdf
 from langchain.document_loaders import PyPDFLoader
 from langchain.document_loaders import Docx2txtLoader
 from langchain.document_loaders import TextLoader
